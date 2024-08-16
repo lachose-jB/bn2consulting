@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Projet</title>
+    
+        <!-- Favicon -->
+        <!--<link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">-->
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+        <!-- Chemins relatifs aux fichiers CSS dans le dossier 'public/assets' -->
+        <link rel="stylesheet" href="/assets/animate/animate.min.css">
+        <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <!-- Spinner Start -->
+        <section id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <article class="spinner"></article>
+        </section>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <section class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <article class="row gx-0">
+                <section class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>264 Avenue, Victor Hugo, 94120 Fontenay-Sous-Bois</small>
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+33########</small>
+                        <small class="text-light"><i class="fa fa-envelope-open me-2"></i>www.bn2smart.net/</small>
+                    </div>
+                </section>
+                <section class="col-lg-4 text-center text-lg-end">
+                    <article class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="#"><i class="fab fa-youtube fw-normal"></i></a>
+                    </article>
+                </section>
+            </article>
+        </section>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Carousel Start -->
+        <section class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <figure class="logobn2"><img src="./assets/img/logobn2.png" alt="logobn2"></figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <section class="collapse navbar-collapse" id="navbarCollapse">
+                    <article class="navbar-nav ms-auto py-0">
+                        <a href="/index" class="nav-item nav-link ">Accueil</a>
+                        <a href="/Apropos" class="nav-item nav-link">À propos</a>
+                        <a href="/Service" class="nav-item nav-link active">Service</a>
+                        <a href="/blog" class="nav-item nav-link">Blog</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
+                    </article>
+                </section>
+            </nav>
+
+            <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+                <div class="row py-5">
+                    <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-4 text-white animated zoomIn">Services BN2</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Navbar & Carousel End -->
+
+        <!-- Full Screen Search Start -->
+        <section class="modal fade" id="searchModal" tabindex="-1">
+            <article class="modal-dialog modal-fullscreen">
+                <section class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                    <article class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </article>
+                    <article class="modal-body d-flex align-items-center justify-content-center">
+                        <section class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                            <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                        </section>
+                    </article>
+                </section>
+            </article>
+        </section>
+        <!-- Full Screen Search End -->
+        
+         <!-- Service Start -->
+        <section class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <article class="container py-5">
+                <section class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                    <h5 class="fw-bold text-primary text-uppercase">Nos Services</h5>
+                    <h1 class="mb-0">Des solutions informatiques personnalisées pour votre entreprise prospère</h1>
+                </section>
+                <section class="row g-5">
+                    <article class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <section class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <article class="service-icon">
+                                <i class="fa fa-shield-alt text-white"></i>
+                            </article>
+                            <h4 class="mb-3">Cybersécurité</h4>
+                            <p class="m-0">NOS AXES D’EXPERTISES
+                                • Conseil et management ( Conduite de projet
+                                et de changement, Développement
+                                informatique .
+                                • Audit et automatisation des systèmes
+                                d'information, mise en place des stratégies
+                                de sécurité informatique).</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </section>
+                    </article>
+                    <article class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <section class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <article class="service-icon">
+                                <i class="fa fa-cog text-white"></i>
+                            </article>
+                            <h4 class="mb-3">Maintenance informatique</h4>
+                            <p class="m-0">Ingénierie( conception, maintenance
+                                informatique et GSM, mise en place d'un
+                                réseau informatique, configuration de la
+                                Voix sur IP, VPN, déploiement de fibre
+                                optique, la mise en place de Wi-Max)</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </section>
+                    </article>
+                    <article class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <section class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <article class="service-icon">
+                                <i class="fa fa-code text-white"></i>
+                            </article>
+                            <h4 class="mb-3">Développement web</h4>
+                            <p class="m-0">Développement informatique
+                                (Développement des applications mobiles,
+                                conception de site web).</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </section>
+                    </article>
+                    <article class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                        <section class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <article class="service-icon">
+                                <i class="fa fa-calendar text-white"></i>
+                            </article>
+                            <h4 class="mb-3">Gestion de Projet</h4>
+                            <p class="m-0">Conseil et management ( Conduite de projet
+                                et de changement, Développement
+                                informatique )</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </section>
+                    </article>
+                    <article class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                        <section class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <article class="service-icon">
+                                <i class="fa fa-search text-white"></i>
+                            </article>
+                            <h4 class="mb-3">Vente</h4>
+                            <p class="m-0">Vente des produits High-tech(Tablette,
+                                ordinateur, application mobile etc...)</p>
+                            <a class="btn btn-lg btn-primary rounded" href="https://www.bn2smart.net/">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </section>
+                    </article>
+                    <article class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                        <section class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <article class="service-icon">
+                                <i class="fa fa-graduation-cap text-white"></i>
+                            </article>
+                            <h4 class="mb-3">Formation</h4>
+                            <p class="m-0">Formation sur mesure par rapport aux
+                                besoins des clients (Gestion, graphisme, maintenance, etc...)</p>
+                            <a class="btn btn-lg btn-primary rounded" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </section>
+                    </article>
+                </section>
+            </article>
+        </section>
+        <!-- Service End -->
+
+        <!-- Testimonial Start -->
+        <section class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <article class="container py-5">
+                <section class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                    <h5 class="fw-bold text-primary text-uppercase">Témoignage</h5>
+                    <h1 class="mb-0">Ce que disent nos clients de nos services numériques et technique</h1>
+                </section>
+                <section class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                    <article class="testimonial-item bg-light my-4">
+                        <section class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="./assets/img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
+                            <article class="ps-4">
+                                <h4 class="text-primary mb-1">Client Name</h4>
+                                <small class="text-uppercase">Profession</small>
+                            </article>
+                        </section>
+                        <p class="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        </p>
+                    </article>
+                    <article class="testimonial-item bg-light my-4">
+                        <section class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="./assets/img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
+                            <article class="ps-4">
+                                <h4 class="text-primary mb-1">Client Name</h4>
+                                <small class="text-uppercase">Profession</small>
+                            </article>
+                        </section>
+                        <section class="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        </section>
+                    </article>
+                    <article class="testimonial-item bg-light my-4">
+                        <section class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="./assets/img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
+                            <article class="ps-4">
+                                <h4 class="text-primary mb-1">Client Name</h4>
+                                <small class="text-uppercase">Profession</small>
+                            </article>
+                        </section>
+                        <section class="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        </section>
+                    </article>
+                    <article class="testimonial-item bg-light my-4">
+                        <select class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img class="img-fluid rounded" src="./assets/img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
+                            <article class="ps-4">
+                                <h4 class="text-primary mb-1">Client Name</h4>
+                                <small class="text-uppercase">Profession</small>
+                            </article>
+                        </select>
+                        <article class="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                        </article>
+                    </article>
+                </section>
+            </article>
+        </section>
+        <!-- Testimonial End -->
+
+        <!-- Vendor Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5 mb-5">
+                <div class="bg-white">
+                    <div class="owl-carousel vendor-carousel">
+                        <img src="./assets/img/vendor-1.jpg" alt="">
+                        <img src="./assets/img/vendor-2.jpg" alt="">
+                        <img src="./assets/img/vendor-3.jpg" alt="">
+                        <img src="./assets/img/vendor-4.jpg" alt="">
+                        <img src="./assets/img/vendor-5.jpg" alt="">
+                        <img src="./assets/img/vendor-6.jpg" alt="">
+                        <img src="./assets/img/vendor-7.jpg" alt="">
+                        <img src="./assets/img/vendor-8.jpg" alt="">
+                        <img src="./assets/img/vendor-9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Vendor End -->
+    
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                            <a href="index.html" class="navbar-brand">
+                                <figure class="logobn2f"><img src="./assets/img/logobn2.png" alt="logobn2"></figure>
+                            </a>
+                            <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                        <div class="row gx-5">
+                            <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Adresse</h3>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                                    <p class="mb-0">1264 Av. Victor Hugo,94120 Fontenay-sous-Bois, France</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-envelope-open text-primary me-2"></i>
+                                    <p class="mb-0">aseck@bn2consulting.fr</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-telephone text-primary me-2"></i>
+                                    <p class="mb-0">+33 755672680</p>
+                                </div>
+                                <div class="d-flex mt-4">
+                                    <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                    <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Menu</h3>
+                                </div>
+                                <div class="link-animated d-flex flex-column justify-content-start">
+                                    <a class="text-light mb-2" href="/index"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                    <a class="text-light mb-2" href="/Apropos"><i class="bi bi-arrow-right text-primary me-2"></i>A propos</a>
+                                    <a class="text-light mb-2" href="/Service"><i class="bi bi-arrow-right text-primary me-2"></i>Service</a>
+                                    <a class="text-light mb-2" href="/blog"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                                    <a class="text-light mb-2" href="/contact"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                                <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                    <h3 class="text-light mb-0">Lien rapide</h3>
+                                </div>
+                                <div class="link-animated d-flex flex-column justify-content-start">
+                                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Boutique</a>
+                                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>CICP</a>
+                                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet up</a>
+                                    <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-white" style="background: #061429;">
+            <div class="container text-center">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
+                            
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Realiser par <a class="text-white border-bottom" href="https://htmlcodex.com">Bn2 smart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+        <!-- Bibliothèques JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+        <!-- Plugins -->
+        <script src="/assets/wow/wow.min.js"></script>
+        <script src="/assets/easing/easing.min.js"></script>
+        <script src="/assets/waypoints/waypoints.min.js"></script>
+        <script src="/assets/counterup/counterup.min.js"></script>
+        <script src="/assets/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Vos scripts -->
+        <script type="module" src="/assets/frontJs/service/serviceMain.js"></script>
+        <script src="/assets/frontJs/scripstJs.js"></script>
+        <script src="/assets/frontJs/service.bundle.js"></script>
+    </body>
+</html>
