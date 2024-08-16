@@ -4,7 +4,7 @@
   "description": "Un projet BN2 Consulting en Node.js avec une structure de répertoires définie.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "dev": "nodemon server.js",
     "build": "webpack"
   },
